@@ -7,8 +7,8 @@ import framelab;
 using namespace framelab::application;
 
 
-export
-struct DockspaceLayer : public Layer {
+export struct DockspaceLayer : public Layer
+{
 
     DockspaceLayer();
 
@@ -20,8 +20,8 @@ struct DockspaceLayer : public Layer {
 };
 
 
-export
-struct AudioLayer : public Layer {
+export struct AudioLayer : public Layer
+{
 
     AudioLayer();
 

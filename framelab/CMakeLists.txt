@@ -20,12 +20,14 @@ target_sources(framelab
             "src/application/timestep.ixx"
             "src/application/window.ixx"
             "src/audio/audio.ixx"
+            "src/channel/channel.ixx"
     PRIVATE
-        #FILE_SET CXX_MODULES FILES
-            "src/application/application.cpp"
-            "src/application/events.cpp"
-            "src/application/window.cpp"
-            "src/audio/audio.cpp"
+        "src/application/application.cpp"
+        "src/application/events.cpp"
+        "src/application/window.cpp"
+        "src/audio/audio.cpp"
+        "src/channel/channel.cpp"
+        "src/application/imgui.cpp"
 )
 
 target_link_libraries(framelab

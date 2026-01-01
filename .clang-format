@@ -1,0 +1,30 @@
+Language: Cpp
+Standard: c++20
+
+IndentWidth: 4
+
+ColumnLimit: 100
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterStruct: true
+  AfterFunction: true
+  AfterEnum: true
+  AfterNamespace: true
+  AfterControlStatement: false
+  BeforeElse: false
+  BeforeCatch: false
+
+MaxEmptyLinesToKeep: 2
+
+NamespaceIndentation: All
+
+AllowShortFunctionsOnASingleLine: Inline
+
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+CommentPragmas: '^///'
+
+AlwaysBreakTemplateDeclarations: Yes

@@ -1,5 +1,5 @@
-#include <memory>
 #include <imgui.h>
+#include <memory>
 
 import framelab;
 import Layers;
@@ -7,16 +7,18 @@ import Layers;
 using namespace framelab::application;
 
 
-
-class SandboxApp : public Application {
-public:
-    SandboxApp() {
+class SandboxApp : public Application
+{
+  public:
+    SandboxApp()
+    {
         set_dark_theme();
         push_layer(std::make_unique<DockspaceLayer>());
         push_layer(std::make_unique<AudioLayer>());
     }
 
-    auto set_dark_theme() -> void {
+    auto set_dark_theme() -> void
+    {
         ImGuiStyle& style = ImGui::GetStyle();
         ImVec4* colors = style.Colors;
 
@@ -101,14 +103,15 @@ public:
 };
 
 
-int main(size_t argc, char** argv) {
-    CommandLineArgs args{ argv, argc };
+int main(size_t argc, char** argv)
+{
+    CommandLineArgs args{argv, argc};
 
     framelab::logging::init("app.log");
 
-    //client_log::info("Hello Sandbox");
+    // client_log::info("Hello Sandbox");
 
-    SandboxApp app{ };
+    SandboxApp app{};
 
     app.run();
 }

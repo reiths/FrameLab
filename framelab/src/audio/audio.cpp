@@ -1,6 +1,7 @@
 module framelab.audio;
 
 
-namespace framelab::audio {
+namespace framelab::audio
+{
 
 }
